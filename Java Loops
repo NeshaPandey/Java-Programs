@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class PrintMultiples {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Input: Get the integer from the user
+        System.out.print("Enter an integer: ");
+        int n = scanner.nextInt();
+
+        // Input: Get the number of multiples to print
+        System.out.print("Enter the number of multiples to print: ");
+        int numMultiples = scanner.nextInt();
+
+        // Output: Print the first multiples of the given integer
+        printMultiples(n, numMultiples);
+    }
+
+    static void printMultiples(int n, int numMultiples) {
+        for (int i = 1; i <= numMultiples; i++) {
+            int result = n * i;
+            System.out.println(n + " x " + i + " = " + result);
+        }
+    }
+}
