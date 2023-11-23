@@ -1,0 +1,23 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class SubstringOperations {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Input string s
+        String s = scanner.nextLine().trim();
+
+        // Input two space-separated integers start and end
+        int start = scanner.nextInt();
+        int end = scanner.nextInt();
+
+        // Print the substring from index start to end-1
+        System.out.println(s.substring(start, end));
+
+        scanner.close();
+    }
+}
