@@ -1,0 +1,25 @@
+import java.io.*;
+import java.util.*;
+public class PalindromeChecker {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Get input from the user
+        //System.out.print("Enter a string: ");
+        String A = scanner.nextLine();
+
+        // Check if the string is a palindrome
+        if (isPalindrome(A)) {
+            System.out.println("Yes");
+        } else {
+            System.out.println("No");
+        }
+    }
+
+    // Function to check if a string is a palindrome
+    static boolean isPalindrome(String s) {
+        String reversed = new StringBuilder(s).reverse().toString();
+        return s.equals(reversed);
+    }
+}
+
